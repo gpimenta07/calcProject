@@ -41,7 +41,6 @@ body {
   }
 }
 
-
 .numbers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -74,9 +73,7 @@ body {
     background-color: #78786a;
   }
 
-  &:active {
-    background-color: #5c5c50;
-  }
+  
 }
 
 .operator {
@@ -86,9 +83,7 @@ body {
     background-color: #ad8e6a;
   }
 
-  &:active {
-    background-color: #d5964e;
-  }
+  
 }
 
 a {
@@ -106,27 +101,25 @@ span {
   font-size: 20px;
 }
 
-/* responsividade */ 
+/* responsividade */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) and (min-width: 768px) {
   .metade {
     display: none;
   }
 }
 
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .metade {
     display: none;
   }
-
   body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background: #9ac08a;
-    gap: 10px;
+    gap: 0;
   }
   
   .calculadora {
@@ -144,11 +137,11 @@ span {
     align-items: center;
     justify-content: center;
     border: none;
-    padding: 20px 10px;
+    padding: 30px 30px;
   
     input {
       background-color: #b5cab9;
-      padding: 10px 15px;
+      padding: 12px 25px;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border: none;
@@ -156,16 +149,63 @@ span {
     }
   }
   
-  
   .numbers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 100%;
     margin: 0px 20px;
-    gap: 5px;
-    padding: 10px 4%;
+    grid-gap: 5px;
+    padding: 5px 10%;
   }
   
-
+  .num,
+  .operator {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    border: none;
+    color: #343434;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 15px;
+    width: 70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+    &:hover {
+      background-color: #78786a;
+    }
+  
+  }
+  
+  .operator {
+    color: #f2a54d;
+    transition: 0.3;
+    &:hover {
+      background-color: #ad8e6a;
+    }
+  
+    
+  }
+  
+  a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  span {
+    color: #575757;
+  }
+  
+  .inputValue {
+    color: black;
+    font-size: 15px;
+  }
 }
-
+  
