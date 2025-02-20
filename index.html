@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <div class="display">
+        <input type="text" class="inputValue" disabled />
+      </div>
+      <div class="numbers">
+        <button class="operator" onclick="clean()">AC</button>
+        <button class="operator" onclick="removeLast()">←</button>
+        <button class="operator" onclick="addCharacter('%')">%</button>
+        <button class="operator" onclick="addCharacter('/')">/</button>
+        <button class="num" onclick="addCharacter('7')">7</button>
+        <button class="num" onclick="addCharacter('8')">8</button>
+        <button class="num" onclick="addCharacter('9')">9</button>
+        <button class="operator" onclick="addCharacter('*')">*</button>
+        <button class="num" onclick="addCharacter('4')">4</button>
+        <button class="num" onclick="addCharacter('5')">5</button>
+        <button class="num" onclick="addCharacter('6')">6</button>
+        <button class="operator" onclick="addCharacter('+')">+</button>
+        <button class="num" onclick="addCharacter('1')">1</button>
+        <button class="num" onclick="addCharacter('2')">2</button>
+        <button class="num" onclick="addCharacter('3')">3</button>
+        <button class="operator" onclick="addCharacter('-')">-</button>
+        <button class="num" onclick="addCharacter('0')">0</button>
+        <button class="operator" onclick="addCharacter('.')">.</button>
+        <button class="operator" onclick="calc()">=</button>
+        <a href="https://www.linkedin.com/in/gpimenta07/" target="_blank"><img src="assets/icons8-linkedin (1).svg" alt=""></a>
+      </div>
+    </div>
+  </body>
+  <div class="metade">
+    <h1>Desenvolvido por <span>Gabriel Pimenta</span>.</h1>
+  </div>
+  <script src="script.js" defer></script>
+</html>
