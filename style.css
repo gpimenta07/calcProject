@@ -123,89 +123,41 @@ span {
   }
   
   .calculadora {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #575757;
-    border-radius: 15px;
   }
   
   .display {
-    border-bottom: 1px solid;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    padding: 30px 30px;
+    
+    padding: 30px 10%;
   
     input {
-      background-color: #b5cab9;
       padding: 12px 25px;
-      border-radius: 5px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      border: none;
-      outline: none;
+      
     }
   }
   
   .numbers {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 100%;
     margin: 0px 20px;
     grid-gap: 5px;
     padding: 5px 10%;
-  }
-  
-  .num,
-  .operator {
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 20px;
-    border: none;
-    color: #343434;
-    cursor: pointer;
-    transition: 0.2s;
-    font-size: 15px;
-    width: 70px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  
-    &:hover {
-      background-color: #78786a;
-    }
-  
-  }
-  
-  .operator {
-    color: #f2a54d;
-    transition: 0.3;
-    &:hover {
-      background-color: #ad8e6a;
-    }
-  
+    height: 100%;
     
   }
   
-  a {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+  .num .operator {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    
+    font-size: 15px;
+    width: 70px;
   
-  span {
-    color: #575757;
-  }
+ 
+  
+ 
   
   .inputValue {
-    color: black;
+    
     font-size: 15px;
   }
+}
 }
   
